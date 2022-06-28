@@ -1,7 +1,15 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
+arr=list(map(int,input().strip().split()))
+c=0
 for i in arr:
-    if(i<0):
+    if i==0:
+        c+=1
+    if i<0:
         i=i*-1
-    p=str(i)
-    print(len(p),end=' ')
+    while(i):
+        i=i//10
+        c+=1
+    print(c,end=' ')
+    c=0
+
+        
