@@ -1,12 +1,8 @@
 n=int(input())
-arr=list(map(int,input().split()))
-c=0
-for i in range(n-1):
-    if(arr[i]>arr[i+1]):
-        c+=1
-    else:
+arr=list(map(int,input().strip().split()))
+for i in range(1,n):
+    if arr[i]>arr[i-1]:
+        print("no")
         break
-if(c==(n-1)):
-    print("yes")
 else:
-    print("no")
+    print("yes")
