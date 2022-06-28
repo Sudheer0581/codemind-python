@@ -1,10 +1,20 @@
-n,m=map(int,input().split())
+n,k=map(int,input().split())
 arr=list(map(int,input().strip().split()))[:n]
-s=0
-for i in arr:
-    if(i<0):
-        i=i*-1
-    p=str(i)
-    if(len(p)==m):
-        s+=1
-print(s)
+l=[]
+d=0
+for i in range(n):
+    p=arr[i]
+    if(p==0):
+        d+=1
+    if(p<0):
+        p=p*-1
+    while(p):
+        d+=1
+        p=p//10
+    l.append(d)
+    d=0
+q=0
+for i in range(n):
+    if(l[i]==k):
+        q+=1
+print(q)
