@@ -1,8 +1,8 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))
-res=[]
-for i in arr:
-    if i not in res and i%2!=0:
-        res.append(i)
-res=sum(res)
-print(str(res))
+arr=list(map(int,input().split()))
+q=set(arr)
+s=0
+for i in q:
+    if(arr.count(i)>=1 and i%2!=0):
+        s+=i
+print(s)
