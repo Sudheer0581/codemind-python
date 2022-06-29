@@ -1,9 +1,8 @@
 n=int(input())
 arr=list(map(int,input().strip().split()))
-res=[]
+s=set(arr)
 c=0
-for i in arr:
-    if i not in res and i%2==0:
-        res.append(i)
+for i in s:
+    if arr.count(i)>=1 and i%2==0:
         c+=1
-print((c))
+print(c)
