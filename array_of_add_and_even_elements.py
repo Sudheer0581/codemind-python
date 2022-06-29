@@ -1,10 +1,10 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
-for i in range(0,n):
-    if arr[i]%2!=0:
-        print(arr[i],end=' ')
-for i in range(0,n):
-    if arr[i]%2==0:
-        print(arr[i],end=' ')
-
-        
+arr=list(map(int,input().strip().split()))
+l=[]
+for i in arr:
+    if i%2!=0:
+        l.append(i)
+for i in arr:
+    if i%2==0:
+        l.append(i)
+print(*l)
