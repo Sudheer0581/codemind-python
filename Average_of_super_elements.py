@@ -1,17 +1,13 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))
-l=[]
-a=0
-s=1
-f=0
-for i in arr:
-    if i==arr.count(i) and i not in l:
-        l.append(i)
-        a=a+i
-        f=1
-if(f==1):
-    s=a/len(l)
-    print("{:.2f}".format(s))
-else:
+arr=list(map(int,input().split()))
+st=set(arr)
+s=0
+c=0
+for i in st:
+    if(arr.count(i)==i):
+        s=s+i
+        c+=1
+if(s==0):
     print("-1")
-    
+else:
+    print("{:.2f}".format(s/c))
