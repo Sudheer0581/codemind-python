@@ -1,13 +1,11 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
+arr=list(map(int,input().strip().split()))
+a,b=map(int,input().split())
 l=[]
-a,b=map(int,input().strip().split())
-for i in range(0,n):
-    if arr[i]>=a and arr[i]<=b:
-        continue
-    l.append(arr[i])
-if(len(l)==0):
-    print("-1")
+for i in range(n):
+    if arr[i]<a or arr[i]>b:
+        l.append(arr[i])
+if len(l)==0:
+    print('-1')
 else:
-    for i in range(len(l)):
-        print(l[i],end=" ")
+    print(*l)
