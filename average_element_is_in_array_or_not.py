@@ -1,15 +1,12 @@
 n=int(input())
+arr=list(map(int,input().strip().split()))
 s=0
-f=0
-a=list(map(int,input().strip().split()))[:n]
-for  i in range(n):
-    s=s+a[i]
-c=s//n
-for i in range(n):
-    if c==a[i]:
-         f=1
-         break
-if f==1:
-    print("True")
+for i in arr:
+    s=s+i
+avg=s//n
+for i in arr:
+    if i==avg:
+        print("True")
+        break
 else:
     print("False")
