@@ -1,10 +1,11 @@
 n=input()
-n1=n.lower()
-s=''
-for i in n1:
-    if i not in s and ord(i)!=32:
-        s=s+i
-k=list(s)
-k.sort()
-for i in k:
-    print(i,end='')
+a=n.lower()
+c=0
+d=""
+for i in a:
+    if i!=' ':
+        if a.count(i)==1:
+            d=d+i
+e=(sorted(d))
+for i in e:
+    print(i,end="")
