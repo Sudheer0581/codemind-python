@@ -3,11 +3,10 @@ arr=list(map(int,input().strip().split()))
 f=0
 l=[]
 for i in arr:
-    if i==arr.count(i) and i not in l:
+    if arr.count(i)==i and i not in l:
         l.append(i)
         f=1
 if f==1:
     print(*l)
 else:
-    print("-1")
-    
+    print('-1')
