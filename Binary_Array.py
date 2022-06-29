@@ -1,10 +1,10 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
+arr=list(map(int,input().split()))
 c=0
-for i in range(0,n):
-    if(arr[i]==1 or arr[i]==0):
+for i in arr:
+    if(i==0 or i==1):
         c+=1
-if(len(arr)==c):
-    print("True")
+if(c==n):
+    print(True)
 else:
-    print("False")
+    print(False)
