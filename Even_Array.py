@@ -1,10 +1,11 @@
 n=int(input())
-f=0
-arr=list(map(int,input().strip().split()))[:n]
-for i in range(0,n):
-    if(arr[i]%2==0):
-        f+=1
-if(f==len(arr)):
-    print('True')
+arr=list(map(int,input().strip().split()))
+l=[]
+s=arr
+for i in arr:
+    if i%2==0:
+        l.append(i)
+if len(l)==len(s):
+    print("True")
 else:
-    print('False')
+    print("False")
