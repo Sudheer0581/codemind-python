@@ -1,2 +1,5 @@
 n=input()
-print(len(n))
+for i in n:
+    print(len(n),end=" ")
+    break
+    
