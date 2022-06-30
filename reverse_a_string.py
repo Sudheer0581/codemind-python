@@ -1,3 +1,5 @@
 n=input()
-a=n[::-1]
-print(a)
+s=n.split()
+s=s[::-1]
+for i in s:
+    print(i[::-1],end=' ')
