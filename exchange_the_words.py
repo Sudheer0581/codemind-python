@@ -1,5 +1,3 @@
 n=input()
-q=n.split()
-for i in n:
-    print(*q[::-1])
-    break
+s=n.split()
+print(*s[::-1],end=' ')
