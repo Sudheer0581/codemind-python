@@ -1,4 +1,5 @@
 n=input()
-q=n.split() # harshad sai ["harshad","sai"]
-for i in q:
+s=n.split()
+for i in s:
     print(len(i),end=" ")
+        
