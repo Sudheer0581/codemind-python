@@ -1,10 +1,11 @@
 n=input()
-l=[]
-for i in n:
-    if i in 'aeiou' and i not in l :
-        l.append(i)
-if len(l)==5:
+s=set(n)
+c=0
+for i in s:
+    if i in 'aeiou':
+        c+=1
+if c==5:
     print("True")
 else:
     print("False")
-        
+
