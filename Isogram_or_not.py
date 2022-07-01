@@ -1,6 +1,7 @@
 n=input()
-s=set(n)
-if len(n)==len(s):
+s=n.split()
+q=set(n)
+if len(q)==len(n):
     print("True")
 else:
     print("False")
