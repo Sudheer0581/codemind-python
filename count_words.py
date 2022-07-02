@@ -1,6 +1,6 @@
 n=input()
 q=n.split()
-l=['a','e','i','o','u','A','E','I','O','U']
+l='aeiouAEIOU'
 c=0
 for i in range(len(q)):
     p=len(q[i])
