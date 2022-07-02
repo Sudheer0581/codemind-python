@@ -4,10 +4,10 @@ def palin(n):
         return True
     else:
         return False
-n=input()
-s=n.split()
+s=input()
+h=s.split()
 c=0
-for i in s:
+for i in h:
     if(palin(i.lower())):
         c+=1
 print(c)
