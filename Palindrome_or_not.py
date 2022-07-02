@@ -1,14 +1,7 @@
-def palin(n):
-    q=n[::-1]
-    if(n==q):
-        return True
-    else:
-        return False
 n=input()
-s=n.split()
-for i in s:
-    if palin(i.lower()):
-        print("True")
-        break
+s=n.lower()
+q=s[::-1]
+if q==s:
+    print("True")
 else:
     print("False")
