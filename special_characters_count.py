@@ -1,6 +1,6 @@
 n=input()
 c=0
 for i in n:
-    if i not in 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ':
+    if(i.islower() or i.isupper() or i.isdigit() or i==" "):
         c+=1
-print(c)
+print(len(n)-c)
