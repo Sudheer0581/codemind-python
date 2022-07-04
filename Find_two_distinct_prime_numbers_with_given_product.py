@@ -10,7 +10,7 @@ for i in range(2,n//2+1):
     if(c==0):
         arr.append(i)
 for k in range(0,len(arr)):
-    for j in range(k+1,len(arr)): #1 2
+    for j in range(k+1,len(arr)): 
         if(arr[k]*arr[j]==n):
             f=1
             p=arr[k]
@@ -20,4 +20,3 @@ if(f==1):
     print(p,q)
 else:
     print("-1")
-        
