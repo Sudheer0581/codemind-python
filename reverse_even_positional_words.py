@@ -1,8 +1,11 @@
 n=input()
 s=n.split()
 for i in range(len(s)):
-    if i%2==0:
-        s[i]=str(s[i])
-        print(s[i][::-1],end=' ')
+    if i%2!=0:
+        continue
     else:
-        print(s[i],end=' ')
+        q=s[i]
+        r=q[::-1]
+        s[i]=r
+print(*s)
+        
