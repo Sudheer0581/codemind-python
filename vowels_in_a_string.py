@@ -1,9 +1,9 @@
 n=input()
-a=input()
+m=input()
 for i in range(len(n)):
-    if(n[i]==a):
-        print(True)
+    if m==n[i]:
+        print("True")
         print(i)
         break
 else:
-    print(False)
+    print("False")
