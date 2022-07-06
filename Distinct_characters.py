@@ -1,11 +1,9 @@
 n=input()
-a=n.lower()
-c=0
-d=""
-for i in a:
-    if i!=' ':
-        if a.count(i)==1:
-            d=d+i
-e=(sorted(d))
-for i in e:
+q=n.lower()
+l=[]
+for i in q:
+    if i.isalpha() and q.count(i)==1:
+        l.append(i)
+l.sort()
+for i in l:
     print(i,end="")
