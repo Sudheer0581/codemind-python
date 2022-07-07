@@ -1,18 +1,21 @@
 n=input()
+q=n.lower()
+#print(n)
+v=0
 c=0
-s=0
-f=0
 d=0
-for i in n:
+w=0
+for i in q:
     if i in 'aeiou':
+        v+=1
+    if i in 'tqwrypsdfghjklzxcvbnm':
+        #print(i)
         c+=1
-    elif(i==" "):
-        s+=1
-    elif(i.isdigit()):
-        f+=1
-    else:
-        d+=1 #conso
-print("Vowels:",c)
-print("Consonants:",d)
-print("Digits:",f)
-print("White spaces:",s)
+    if i in '1234567890':
+        d+=1
+    if i in " ":
+        w+=1
+print('Vowels:',v)
+print('Consonants:',c)
+print('Digits:',d)
+print('White spaces:',w)
