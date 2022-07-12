@@ -1,12 +1,13 @@
-n1=input()
-n2=input()
-q1=n1.lower()
-q2=n2.lower()
-s1=q1.split()
-s2=q2.split()
+n=input()
+k=n.lower()
+n1=k.split()
+m=input()
+q=m.lower()
+m1=q.split()
 c=0
-for i in s1:
-    for j in s2:
+for i in n1:
+    for j in m1:
         if i==j:
             c+=1
 print(c)
+        
