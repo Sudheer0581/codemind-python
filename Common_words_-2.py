@@ -1,18 +1,17 @@
-s1=input()
-s2=input()
-q1=s1.split()
-q2=s2.split()
+n=input()
+n1=n.split()
+m=input()
+m1=m.split()
 l=[]
-x=[]
-for i in q1:
-    if q1.count(i)==1:
-        l.append(i)
-for i in q2:
-    if q2.count(i)==1:
-        x.append(i)
+k=[]
 c=0
+for i in n1:
+    if n.count(i)==1:
+        l.append(i)
+for j in m1:
+    if m.count(j)==1:
+        k.append(j)
 for i in l:
-    for j in x:
-        if i==j:
-            c+=1
+    if i in k:
+        c+=1
 print(c)
