@@ -1,9 +1,13 @@
 n=int(input())
 arr=list(map(int,input().strip().split()))
+rev=0
 l=[]
-for i in range(n):
-    q=str(arr[i])
-    r=q[::-1]
-    l.append(int(r))
-for i in range(n):
-    print(l[i],end=' ')
+for j in arr:
+    while(j):
+        r=j%10
+        rev=rev*10+r
+        j=j//10
+    l.append(rev)
+    rev=0
+    
+print(*l)
