@@ -1,5 +1,8 @@
 n=int(input())
-for i in range(1,n+1):
-    for j in range(1,i+1):
-        print(j,end="")
-    print()
+ascii_value = 65
+for i in range(n):
+    for j in range(n):
+        alphabet = chr(ascii_value)
+        print(alphabet, end=" ")
+    ascii_value += 1
+    print("")
