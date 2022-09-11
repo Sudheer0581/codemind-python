@@ -26,7 +26,3 @@ else:
         print(k)
     else:
         print(s)
-
-
-        
-    
