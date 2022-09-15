@@ -1,13 +1,13 @@
-m,n=map(int,input().split())
-arr1=list(map(int,input().strip().split()))
-a1=set(arr1)
-arr2=list(map(int,input().strip().split()))
-a2=set(arr2)
+a,b=map(int,input().split())
+a=list(map(int,input().strip().split()))
+a1=set(a)
+b=list(map(int,input().strip().split()))
+b1=set(b)
 c=0
 for i in a1:
-    if i not in a2:
+    if i not in b1:
         c+=1
-for i in a2:
+for i in b1:
     if i not in a1:
         c+=1
 print(c)
