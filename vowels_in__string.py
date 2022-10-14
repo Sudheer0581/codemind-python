@@ -1,8 +1,9 @@
 n=input()
 l=[]
 for i in n:
-    if i in 'AEIOUaeiou' and i not in l:
+    if i in 'aeiouAEIOU' and i not in l:
         l.append(i)
+        print(i,end=" ")
         f=1
-if(f==1):
-    print(*l,end=' ')
+if f==0:
+    print("-1")
