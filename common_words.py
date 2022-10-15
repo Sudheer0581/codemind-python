@@ -1,9 +1,9 @@
-s1=input()
-s2=input()
-s1=s1.lower()
-s2=s2.lower()
-s1=s1.split()
-s2=s2.split()
-for i in s2:
-    if i in s1:
+a=input()
+b=input()
+a=a.lower()
+b=b.lower()
+a=a.split()
+b=b.split()
+for i in b:
+    if i in a:
         print(i,end=' ')
