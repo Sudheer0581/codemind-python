@@ -14,5 +14,3 @@ for i in s2:
 c=sorted(l)
 for i in c:
     print(i,end='')
-
-    
