@@ -8,5 +8,5 @@ for i in s:
             c+=1
     l.append(c)
     c=0
-m=min(l)
+m=max(l)
 print(l.count(m))
