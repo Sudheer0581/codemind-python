@@ -1,17 +1,21 @@
 a=input()
+#print(a)
 b=input()
-r=a.lower()
-q=b.lower()
-x=set(r)
-z=set(q)
-q=list(x)
-v=list(z)
-c=0
-for i in q:
-    if i in v:
-        v.remove(i)
-        c+=1
-if(c==len(q)):
+#print(b)
+l=[]
+s=[]
+x=[]
+if(a!=b):
+    for i in a:
+        l.append(i)
+    for i in b:
+        s.append(i)
+    for i in l:
+        if i in s:
+            x.append(i)
+else:
+    print("False")
+if(len(s)==len(a)):
     print("True")
 else:
     print("False")
