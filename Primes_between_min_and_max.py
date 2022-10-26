@@ -1,24 +1,17 @@
-def primes(n):
-    if(n==1):
-        return False
-    else:
-        for i in range(2,int(n**0.5)+1):
-            if n%i==0:
-                return False
-    return True
 n=int(input())
-arr=list(map(int,input().split()))[:n]
-#print(arr)
-mi=arr.index(min(arr))
-ma=arr.index(max(arr))
+l=list(map(int,input().strip().split()))
+maxi=l.index(max(l))
+mini=l.index(min(l))
+if(maxi<mini):
+    mini,maxi=maxi,mini
 c=0
-if(mi<ma):
-    for i in range(mi,ma+1):
-        if primes(arr[i]):
+for i in range(mini,maxi+1):
+    if(l[i]<=1):
+        continue
+    else:
+        for j in range(2,l[i]):
+            if(l[i]%j==0):
+                break
+        else:
             c+=1
-    print(c)
-else:
-    for i in range(ma,mi+1):
-        if primes(arr[i]):
-            c+=1
-    print(c)
+print(c)
