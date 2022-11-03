@@ -1,12 +1,12 @@
-n,m=map(int,input().split())
-a=list(map(int,input().split()))[:n]
-l=list(map(int,input().split()))[:m]
-c=0
-for i in l:
-    if i in a:
-        a.remove(i)
-        c+=1
-if c==len(l):
+a,b=map(int,input().split())
+l=list(map(int,input().split()))
+z=list(map(int,input().split()))
+k=[]
+for i in z:
+    if i in l and i not in k:
+        k.append(i)
+if(len(k)==len(z)):
     print("Yes")
 else:
     print("No")
+    
