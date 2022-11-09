@@ -1,14 +1,24 @@
-n1=input()
-s1=n1.lower()
-n2=input()
-s2=n2.lower()
-l=[]
-k=' '
+n=input()
+n=n.lower()
+n=n.split()
+m=input()
+m=m.lower()
+m=m.split()
+s11=""
+s22=""
+for i in n:
+    s11+=i
+for i in m:
+    s22+=i
+s1=set(s11)
+s2=set(s22)
 c=0
-for i in s1:
-    if i not in s2 and i not in k and i not in l:
-        l.append(i)
-for i in s2:
-    if i not in s1 and i not in k and i not in l:
-        l.append(i)
-print(len(l))
+for j in s1:
+    if j!=" " and j not in s2 :
+        #print(j)
+        c+=1
+for j in s2:
+    if j!=" " and j not in s1:
+        #print(j)
+        c+=1
+print(c)
