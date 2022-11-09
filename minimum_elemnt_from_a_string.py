@@ -1,11 +1,14 @@
-a=input()
-a=a.split()
-x=a[-1]
-y=min(x)
-if(ord(y)>=65 and ord(y)<=90):
-    if y.lower() in x:
-        print(y.lower())
+n=input()
+k=n.split()
+s=[]
+for i in k[-1]:
+    if((ord(i)>=65 and ord(i)<=90) or (ord(i)>=97 and ord(i)<=122)):
+        s.append(i)
+s.sort()
+if(s[0].isupper()):
+    if(s[0].lower() in s):
+        print(s[0].lower())
     else:
-        print(y)
+        print(s[0])
 else:
-    print(y)
+    print(s[0])
